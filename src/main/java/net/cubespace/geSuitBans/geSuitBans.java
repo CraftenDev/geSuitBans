@@ -13,11 +13,11 @@ import net.cubespace.geSuitBans.commands.UnbanCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class geSuitBans extends JavaPlugin {
-    public static geSuitBans instance;
+    public static geSuitBans INSTANCE;
 
     @Override
     public void onEnable() {
-        instance = this;
+        INSTANCE = this;
         registerChannels();
         registerCommands();
     }
